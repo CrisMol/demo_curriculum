@@ -376,11 +376,12 @@ img {
 }
 
 /* Proyectos Java */
-.projects-java, .project-asenut {
+
+.projects-java, .project-asenut, .project-excel, .project-1000-regalos, .project-hilda-maria {
 	margin-top: 50px;
 }
 
-.projects-java .content a {
+.projects-java .content a, .projects-php .content a{
 	padding: 15px;
 	width: 100%;
 	text-align: left;
@@ -389,12 +390,14 @@ img {
 	box-shadow: 0 5px 20px rgba(0,0,0,0.5);
 }
 
-.projects-java .content, .project-asenut .content {
+.projects-java .content, .project-asenut .content , .project-excel .content,
+.project-1000-regalos .content, .project-hilda-maria .content, .projects-php .content {
 	text-align: left;
 	flex-direction: column;
 }
 
-.project-asenut .content .imagen-asenut {
+.project-asenut .content .imagen-asenut, .project-1000-regalos .content .imagen-1000-regalos, 
+.project-hilda-maria .content .imagen-hilda-maria{
 	align-self: center;
 	max-width: 300px;
 	height: 250px;
