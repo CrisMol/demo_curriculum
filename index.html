@@ -1,269 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Web Cristian Molina</title>
 	<meta charset="utf-8">
+	<title>Cristian Molina</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--Estilos Personlizados-->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/conocimientos.css">
+	<link rel="stylesheet" type="text/css" href="css/style_index.css">
 
+    <link rel="shortcut icon" type="image/x-icon"  href="img/imagen2.ico">
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
-<body>
+<body>	
+
+	<div id="particles-js">
+		
+	</div>
 	<header>
-		<a href="#" class="logo">Portafolio</a>
-		<div class="toggle" onclick="toggleMenu();"></div>
-		<ul class="menu">
-			<li><a href="#home" onclick="toggleMenu();" >Inicio</a></li>
-			<li><a href="#about" onclick="toggleMenu();" >Sobre mi</a></li>
-			<li><a href="#services" onclick="toggleMenu();">Servicios</a></li>
-			<li><a href="#work" onclick="toggleMenu();">Experiencia Laboral</a></li>
-			<li><a href="#conocimientos" onclick="toggleMenu();" >Conocimientos</a></li>
-			<li><a href="#projects" onclick="toggleMenu();">Proyectos</a></li>
-			<li><a href="#contact" onclick="toggleMenu();">Contacto</a></li>
-		</ul>
+		<div class="header1"><center>
+			<h1>Molina Muñoz Cristian Alexander</h1></center>
+		</div>
+		<div class="header2" id="header2">
+			
+		</div>
 	</header>
 
-	<section class="banner" id="home">
-		<div class="textBx">
-			<h2>Programador<br><span>Cristian Molina</span></h2>
-			<!--Button-->
-			<a href="#about" class="btn">
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				Mas Sobre Mí
-			</a>
-		</div>
-	</section>
+	<div class="container">
+		<nav id="menu" class="menu">
+	    	<ul>
+	        	<li><a href="informacion.html">
+	            	<div id="icono1"></div>
+	            	INFORMACION
+	            </a></li>
 
-	<section class="about" id="about">
-		<div class="heading">
-			<h2>Sobre Mi</h2>
-		</div>
-		<div class="content">
-			<div class="contentBx w50">
-				<h3>Desarrollo de aplicaciones web y de Escritorio</h3>
-				<p>Soy Cristian Molina, <b>Ingeniero en Informática y Ciencias de la Computación</b> graduado en la Universidad UTE (Ecuador). Me desempeño en el área de Desarrollo adaptable a la necesidad de nuestros clientes, como <b>páginas web</b>, <b>aplicaciones de escritorio</b>, <b>automatización de procesos</b>, configuración y mantenimiento de software y hardware, bases de datos, entre otros. 
-				<br>Soy una persona en crecimiento constante y autodidacta, por lo que he logrado adquirir conocimientos intermedios en <b>marketing digital</b> para publicidad, <b>SEO</b>, nuevas tecnologías de desarrollo como <b>Laravel</b>, <b>Wordpress</b>, entre otros. 
-				Ingeniero sumergido en el mundo de la programación.
-				</p>
+	            <li><a href="secciones.html">
+	                <div id="icono3"></div>
+	                CAPACITACION
+	            </a></li>
 
-				<a href="documents/Hoja-de-vida.pdf" class="btn" target="_blank">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					Ver hoja de vida
-				</a>
-			</div>	
-			<div class="w50">
-				<img src="images/me.jpg">
-			</div>
-		</div>
-	</section>
+	            <li><a href="secciones.html #work">
+	            	<div id="icono2"></div>
+	            	EXPERIENCIA LABORAL
+	            </a></li>
+	            
+	            
+	            
+	            <li><a href="secciones.html#conocimientos">
+	            	<div id="icono4"></div>
+	            	CONOCIMIENTOS
+	            </a></li>
+	            
+	            <li><a href="secciones.html #contact">
+	            	<div id="icono5"></div>
+	            	CONTACTENOS
+	            </a></li>
+	            
+	        </ul>
 
-	<section class="services" id="services">
-		<div class="heading white">
-			<h2>Mis servicios</h2>
-		</div>
-		<div class="content">
-			<div class="servicesBx">
-				<img src="images/diseno-web.jpg">
-				<h2>Páginas web</h2>
-				<p>Diseño web adaptado a las nuevas tendencias del mundo digital. Atractivas, formales, innovadoras y todo lo que necesitas para ti y tu empresa. Empezamos con un analisis de tus necesidades y del mercado actual para realizar informes de calidad y resultado que deseas.</p>
-			</div>
-			<div class="servicesBx">
-				<img src="images/diseno-web.jpg">
-				<h2>Programación Web</h2>
-				<p>Creación de programas que se adapten a las necesidades actuales, con un análisis profundo para el correcto desarrollo de las funcionalidades del sistema, pantallas de fácil uso e intuitivas. </p>
-			</div>
-			<div class="servicesBx">
-				<img src="images/diseno-web.jpg">
-				<h2>Mantenimiento Software/Hardware</h2>
-				<p>Reparación, actualización y configuración de computadoras, laptops, y equipos en red local, etc. Instalación de Software y Hardware para cibercafé, negocios u hogar. Se reliza actualización de windows, formateo, respaldos y reparaciones técnicas.</p>
-			</div>
-			<div class="servicesBx">
-				<img src="images/diseno-web.jpg">
-				<h2>SEO</h2>
-				<p>He tenido la oportunidad de entrar al mundo del posicionmiento en los motores de busqueda mediante calidad de cotenido, carga del servidor y págin, autorización, palabras claves, infraestructura, entre otras características que influyen en el SEO</p>
-			</div>
-		</div>
-	</section>
-
-	<section class="work" id="work">
-		<div class="heading">
-			<h2>Experiencia Laboral</h2>
-			<p>Experiencia de 1 y 6 meses año en programación web y escritorio.</p>
-		</div>
-		<div class="content">
-			<div class="card">
-				<div class="face face1">
-					<img src="images/ute-logo.png">
-					<h2>Universidad UTE</h2>
-				</div>
-				<div class="face face2">
-					<h3>Dirección de la Investigación</h3>
-					<p>Optimización de Procesos y Gestión de Formularios en Sharepoint</p>
-					<a href="trabajo-ute.html" class="btn">Leer más</a>
-				</div>
-			</div>
-			<div class="card">
-				<div class="face face1">
-					<img src="images/mega-bahia-logo.png">
-					<h2>Almacenes Mega Bahía</h2>
-				</div>
-				<div class="face face2">
-					<h3>Programador y Gestor de Contenidos</h3>
-					<p>Programador y Gestor de Contenidos</p>
-					<a href="trabajo-mega-bahia.html" class="btn">Leer más</a>
-				</div>
-			</div>
-
-		</div>
-		<!--<div class="heading">
-			<a href="#" class="btn">Ver mas</a>
-		</div>-->
-	</section>
-
-	<section class="conocimientos" id="conocimientos">
-		<div class="heading">
-			<h2>Tecnología que Uso</h2>
-			<p>Principales Lenguajes y Frameworks que Utilizo</p>
-		</div>
-		<div class="content">
-			<li>
-				<h3>Diseño Web</h3><span class="bar"><span class="diseno-web"></span></span>
-			</li>
-
-			<li>
-				<h3>PHP</h3><span class="bar"><span class="php"></span></span>
-			</li>
-
-			<li>
-				<h3>Java</h3><span class="bar"><span class="java"></span></span>
-			</li>
-
-			<li>
-				<h3>Codeigniter</h3><span class="bar"><span class="codeigniter"></span></span>
-			</li>
-
-			<li>
-				<h3>Wordpress</h3><span class="bar"><span class="wordpress"></span></span>
-			</li>
-
-			<li>
-				<h3>MySql</h3><span class="bar"><span class="mysql"></span></span>
-			</li>
-		</div>
-			<a href="conocimientos.html" class="btn">
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				Ver más
-			</a>
-	</section>
-
-	<section class="projects" id="projects">
-		<div class="heading">
-			<h2>Proyectos que he realizado a lo largo de mi carrera</h2>
-			<p>Aqui tengo algunos proyectos que he realizado en el campo laboral, de aprendizaje y por curiosidad</p>
-		</div>
-		<div class="content">
-			<div class="card">
-				<div class="imgBx">
-					<img src="images/java-mysql-netbeans-icon.jpg">
-				</div>
-				<div class="content-card">
-					<h3>Java, MYSQL, Netbeans</h3>
-					<p>Portafolio de trabjos realizados con el lenguaje de programación Java en el campo laboral</p>
-					<a href="proyectos-java.html" class="btn">Ver Proyectos</a>
-				</div>
-			</div>
-
-			<div class="card">
-				<div class="imgBx">
-					<img src="images/php-mysql-icon.jpg">
-				</div>
-				<div class="content-card">
-					<h3>PHP 7, Codeigniter, Mysql</h3>
-					<p>Portafolio de trabajos realizados con el lenguaje de programación PHP en el campo laboral, Páginas web, aplicaciones, entre otras.</p>
-					<a href="proyectos-php.html" class="btn">Ver Proyectos</a>
-				</div>
-			</div>
-
-			<div class="card">
-				<div class="imgBx">
-					<img src="images/aprendizaje-icon.jpg">
-				</div>
-				<div class="content-card">
-					<h3>Cursos o Capacitaciónes</h3>
-					<p>Portafolio de proyectos realizados en cursos o capacitaciones para demostrar lo aprendido y ocuparlo en el mundo laboral.</p>
-					<a href="trabajo-ute.html" class="btn">Ver Proyectos</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="contact" id="contact">
-		<div class="heading white">
-			<h2>Contacto</h2>
-			<p>Enviame un mensaje, te responderé lo más rápido que pueda</p>
-		</div>
-		<div class="content">
-			<div class="contactInfoBox">
-				<h3>Informacion</h3>
-				<div class="contactInfoBx">
-					<div class="box">
-						<div class="icon">
-							<li class="fa fa-map-marker"></li>
-						</div>
-						<div class="text">
-							<h3>Direccion</h3>
-						 	<p>Los Rosales de Guamani</p>
-						</div>
-					</div>
-					<div class="box">
-						<div class="icon">
-							<li class="fa fa-phone"></li>
-						</div>
-						<div class="text">
-							<h3>Celular</h3>
-						 	<p>0963639728</p>
-						</div>
-					</div>
-					<div class="box">
-						<div class="icon">
-							<li class="fa fa-envelope"></li>
-						</div>
-						<div class="text">
-							<h3>Email</h3>
-						 	<p>molinacuario_97@hotmail.com</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="formBx">
-				<form>
-					<h3>Deja tu Mensaje</h3>
-					<input type="text" name="" placeholder="Nombre Completo">
-					<input type="email" name="" placeholder="Email">
-					<textarea placeholder="Escribe tu mensaje"></textarea>
-					<input type="submit" name="" value="send">
-				</form>
-			</div>
-		</div>
-	</section>
-
-	<div class="copyright">
-		<p>Copyright 2020 Cristian Molina. All Right Reserved</p>
+	   	</nav>
 	</div>
-	<script src="js/app.js" type="text/javascript"></script>
-	<script src="js/menu.js" type="text/javascript"></script>
+
+	 <!-- Piepagina -->
+   <footer id="piepagina">
+	    <p class="textopie"><br>
+	      Guamanì, Parque Industrial<br>
+	     Telfs. 0963639728<br>
+	    <label type="email">molinacuario_97@hotmail.com</label><br>© Copyright 2020 <a href="informacion.html" class="enlacecpw">Cristian Molina Muñoz Alexander</a> Todos los derechos reservados  </p>
+    </footer>
+
+
+	<script type="text/javascript" src="js/particles.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/text.js"></script>
 </body>
 </html>

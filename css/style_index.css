@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+
+body {
+	background: black;
+}
+
+#particles-js {
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: -1;
+
+}
+
+header {
+	width: 100%;
+	height: 300px;
+	text-align: center;
+}
+
+header .header1 {
+	height: 100px;
+}
+
+header .header2 {
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header1 h1, .header2 {
+	color: #fff;
+}
+
+footer {
+	width: 100%;
+	height: 150px;
+	text-align: center;
+}
+
+footer p {
+	color: #fff;
+}
+
+.container {
+	position: relative;
+	z-index: 99;
+	width: 100%;
+	min-height: calc(100vh - 300px - 150px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+#menu ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin:0;
+	list-style:none;
+}
+
+#menu li a{
+	width:150px;
+	height:150px;
+	background:url(../images/fondo-boton.png) no-repeat;
+	background:linear-gradient(top,#0DC2FF,#007095);
+	background:-moz-linear-gradient(top,#0DC2FF,#007095);
+	background:-o-linear-gradient(top,#0DC2FF,#007095);
+	background:-ms-linear-gradient(top,#0DC2FF,#007095);
+	background:-webkit-linear-gradient(top,#0DC2FF,#007095);
+	border-radius:10px;
+	float:left;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:#FFF;
+	text-align:center;
+	text-decoration:none;
+	margin-right:23px;
+	padding-top:90px;
+	margin-bottom: 10px;
+	position:relative;
+	transition:transform 0.4s;
+	-moz-transition:-moz-transform 0.4s;
+	-ms-transition:-ms-transform 0.4s;
+	-o-transition:-o-transform 0.4s;
+	-webkit-transition:-webkit-transform 0.4s;
+}
+
+#menu li a:hover{
+	transform:scale(1.3,1.3) rotate(20deg);
+	-moz-transform:scale(1.3,1.3) rotate(20deg);
+	-o-transform:scale(1.3,1.3) rotate(20deg);
+	-ms-transform:scale(1.3,1.3) rotate(20deg);
+	-webkit-transform:scale(1.3,1.3) rotate(20deg);
+}
+
+#menu li a #icono1{
+	width:54px;
+	height:54px;
+	display:block;
+	background:url(../images/icono-cursos.png) no-repeat;
+	position:absolute;
+	left:48px;
+	top:20px;
+}
+#menu li a:hover #icono1{
+	
+}
+#menu li a #icono2{
+	width:54px;
+	height:54px;
+	display:block;
+	background:url(../images/icono-videos.png) no-repeat;
+	position:absolute;
+	left:48px;
+	top:20px;
+}
+#menu li a:hover #icono2{
+
+}
+#menu li a #icono3{
+	width:74px;
+	height:59px;
+	display:block;
+	background:url(../images/icono-instructores.png) no-repeat;
+	position:absolute;
+	left:38px;
+	top:16px;
+}
+#menu li a:hover #icono3{
+	
+}
+#menu li a #icono4{
+	width:72px;
+	height:59px;
+	display:block;
+	background:url(../images/recurso.png) no-repeat center;
+	position:absolute;
+	left:39px;
+	top:16px;
+}
+#menu li a:hover #icono4{
+	
+}
+#menu li a #icono5{
+	width:63px;
+	height:47px;
+	display:block;
+	background:url(../images/icono-contacto.png) no-repeat;
+	position:absolute;
+	left:44px;
+	top:27px;
+}

@@ -1,0 +1,786 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+header,nav,section,article,footer,figure{
+	display:block;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+
+section {
+	padding: 100px;
+}
+
+.banner {
+	position: relative;
+	min-height: 100vh;
+	background: url("../images/trabajo.jpeg");
+	background-size: cover;
+	background-position: right;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.banner h2 {
+	font-size: 3em;
+	color: #fff;
+	font-weight: 500;
+	line-height: 1.5em;
+}
+
+.banner h2 span {
+	font-size: 1.5em;
+	font-weight: 700;
+	color: blue;
+}
+
+.btn {
+	position: relative;
+	background: rgba(0,0,0,.5);
+	display: inline-block;
+	color: #fff;
+	margin-top: 20px;
+	padding: 10px 30px;
+	color: #fff;
+	margin-top: 20px;
+	padding: 10px 30px;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: 500;
+	overflow: hidden;
+}
+
+.btn1 {
+	border: solid;
+	position: relative;
+	background: rgba(.7,.7,.7,.7);
+	display: inline-block;
+	color: white;
+	margin-top: 20px;
+	padding: 10px 30px;
+	color: #fff;
+	margin-top: 20px;
+	padding: 10px 30px;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: 500;
+	overflow: hidden;
+}
+.btn:before {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	bottom: 2px;
+	width: 50%;
+	background: rgba(255,255,255,0.05);
+}
+
+.btn span:nth-child(1) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: linear-gradient(to right, gray, black);
+	animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1{
+	0% {
+		transform: translateX(-100%);
+	}
+
+	100% {
+		transform: translateX(100%);
+	}
+}
+
+.btn span:nth-child(2) {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 1px;
+	height: 100%;
+	background: linear-gradient(to bottom, gray, black);
+	animation: animate2 2s linear infinite;
+	animation-delay: 1s;
+}
+
+@keyframes animate2{
+	0% {
+		transform: translateY(-100%);
+	}
+
+	100% {
+		transform: translateY(100%);
+	}
+}
+
+.btn span:nth-child(3) {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 1px;
+	background: linear-gradient(to left, gray, black);
+	animation: animate3 2s linear infinite;
+}
+
+@keyframes animate3{
+	0% {
+		transform: translateX(100%);
+	}
+
+	100% {
+		transform: translateY(-100%);
+	}
+}
+
+.btn span:nth-child(4) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 100%;
+	background: linear-gradient(to left, gray, black);
+	animation: animate4 2s linear infinite;
+	animation-delay: 1s;
+}
+
+@keyframes animate4{
+	0% {
+		transform: translateY(100%);
+	}
+
+	100% {
+		transform: translateY(-100%);
+	}
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	z-index: 1000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.5s;
+}
+
+header.sticky {
+	background: black;
+	padding: 20px 100px;
+	
+}
+
+header .logo {
+	color: #fff;
+	font-size: 24px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+header sticky .logo {
+	color: #111;
+}
+
+header ul {
+	position: relative;
+	display: flex;
+}
+
+header ul li {
+	position: relative;
+	list-style: none;
+}
+
+header ul li a {
+	position: relative;
+	display: inline-block;
+	margin: 0 5px;
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 10px;
+}
+
+header ul li a:hover {
+	background: rgba(0,0,0,0.3);
+}
+
+header .sticky ul li a{
+	color: #111;
+}
+
+.heading {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+	color: #111;
+}
+
+.heading h2 {
+	font-weight: 600;
+	font-size: 30px;
+}
+
+.content {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.about{
+	padding-top: 150px;
+	position: relative;
+	min-height: 100vh;
+	background: url("../images/trabajo.jpeg");
+	background-size: cover;
+	background-position: right;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.content1 {
+
+	width: 80%;
+	background: rgba(0,0,0,.5); 
+	display: inline-flex;
+	justify-content: space-between;
+	text-align: justify;
+	color: #CCCBCB;
+
+
+}
+.contentBX {
+	padding-right: 30px;
+}
+
+.contentBx h3 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.w50 {
+	min-width: 50%;
+}
+
+img {
+	max-width: 100%;
+}
+
+.services, .testimonial, .conocimientos {
+	background: #111;
+}
+
+.heading.white {
+	color: #fff;
+}
+
+.services .content {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.services .content .servicesBx{
+	padding: 40px 20px;
+	background: #222;
+	color: #fff;
+	max-width: 340px;
+	margin: 20px;
+	text-align: center;
+	transition: 0.5s;
+}
+
+.services .content .servicesBx:hover {
+	background: #2196f3;
+	transform: translateY(-10px);
+}
+
+.services .content .servicesBx img {
+	max-width: 80px;
+	//filter: invert(1);
+}
+
+.services .content .servicesBx h2 {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.work .content {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.work .content .workBx {
+	width: 50%;
+	padding: 20px;
+
+}
+
+.work .content .workBx img {
+	max-width: 100%;
+}
+
+.work .content .card {
+	position: relative;
+	width: 300px;
+	height: 300px;
+}
+
+.work .content .card .face {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: 0.5s;
+}
+
+.work .content .card .face.face1 {
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	transform-origin: bottom;
+}
+
+.work .content .card .face.face1 img {
+	max-width: 150px;
+	min-height: 100px;
+}
+
+.work .content .card .face.face1 h3 {
+	margin: 10px 0px 0px;
+	color: #fff;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.work .content .card:hover .face.face1 {
+	transform: translateY(-100%) rotateX(90deg);
+	background: #000;
+}
+
+.work .card .face.face2 {
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	transform-origin: top;
+	transform: translateY(100%) rotateX(90deg);
+}
+
+.work .card .face.face2 a {
+	border: 1px solid #fff;
+	background: rgba(0,0,0,.5);
+	width: 50$;
+}
+
+
+.work .card:hover .face.face2 {
+	transform: translateY(0) rotateX(0deg);
+	background: #222;
+}
+
+/*Experiencia en UTE*/
+
+.work-ute.boton {
+	text-align: center;
+}
+
+.work-ute .grid .grid-content ul {
+	margin-left: 50px;
+}
+
+.work-ute {
+	margin-top: 50px;
+}
+
+/* Proyectos Java */
+.projects-java, .project-asenut {
+	margin-top: 50px;
+}
+
+.projects-java .content a {
+	padding: 15px;
+	width: 100%;
+	text-align: left;
+	text-decoration: none;
+	color: #000;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+.projects-java .content, .project-asenut .content {
+	text-align: left;
+	flex-direction: column;
+}
+
+.project-asenut .content .imagen-asenut {
+	align-self: center;
+	max-width: 300px;
+	height: 250px;
+	text-align: center;
+	margin: 30px 0;
+}
+
+.project-asenut .content .imagen-asenut img {
+	width: 100%;
+	height: 100%;
+}
+
+.project-asenut .content .imagen-asenut p {
+	font-size: 0.8em;
+}
+
+.conocimientos .heading {
+	color: #fff;
+}
+
+.conocimientos .content {
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+.conocimientos li {
+	margin: 10px 0; 
+	list-style: none;
+}
+
+.bar {
+	background: #353b48;
+	display: block;
+	height: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 3px;
+	box-shadow: 0 0 10px #2187e7b3;
+}
+
+.bar span {
+	height: 5px;
+	float: left;
+	background: blue;
+}
+
+.projects .content .card {
+	position: relative;
+	max-width: 300px;
+	height: 215px;
+	background: #fff;
+	margin: 30px 10px;
+	padding: 20px 15px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+	transition: 0.3s ease-in-out; /* especifica un efecto de transición con un inicio y un final lentos*/
+}
+
+.projects .content .card:hover {
+	height: 420px;
+}
+
+.projects .content .card .imgBx {
+	position: relative;
+	width: 260px;
+	height: 260px;
+	top: -60px;
+	left: 10px;
+	z-index: 1;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.projects .content .card .imgBx img {
+	max-width: 100%;
+	border-radius: 4px;
+}
+
+.projects .content .card .content-card {
+	position: relative;
+	margin-top: -140px;
+	padding: 10px 15px;
+	text-align: center;
+	color: #111;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s ease-in-out; /* especifica un efecto de transición con un inicio y un final lentos*/
+}
+
+.projects .content .card:hover .content-card {
+	visibility: visible;
+	opacity: 1;
+	transition-delay: 0.1s; /*Esperar 0.3s para hacer la animación*/
+}
+
+.contact {
+	background: #111;
+}
+
+.formBx {
+	min-width: 60%;
+}
+
+.formBx form {
+	display: flex;
+	flex-direction: column;
+}
+
+.formBx form h3, .contactInfo h3 {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.formBx form input, .formBx form textarea{
+	margin-bottom: 20px;
+	padding: 15px;
+	font-size: 16px;
+	background: #222;
+	border: none;
+	color: #fff;
+	resize: none;
+}
+
+.formBx form textarea {
+	min-height: 200px;
+}
+
+.formBx form input::placeholder, .formBx form textarea::placeholder {
+	color: #999;
+}
+
+.formBx form input[type="submit"]{
+	max-width: 100px;
+	background: #2196f3;
+	cursor: pointer;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.contactInfo {
+	min-width: 40%;
+}
+
+.contactInfoBx {
+	position: relative;
+}
+
+.contactInfoBx .box {
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}
+
+.contactInfoBx .box .icon {
+	min-width: 40px;
+	padding-top: 4px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	font-size: 24px;
+}
+
+.contactInfoBx .box .text {
+	width: 100%;
+	display: flex;
+	margin-left: 20px;
+	font-size: 16px;
+	color: #fff;
+	flex-direction: column;
+	font-weight: 300;
+}
+
+.contactInfoBx .box .text h3 {
+	font-weight: 500;
+	color: #2196f3;
+	margin-bottom: 0;
+}
+
+.contactInfoBox h3 {
+	color: #fff;
+}
+
+.copyright {
+	background: #000;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+}
+
+/*Responsive*/
+@media (max-width: 1100px) {
+	header, header.sticky {
+		padding: 20px 50px;
+		z-index: 1000;
+	}
+
+	.menu {
+		position: fixed;
+		top: 75px;
+		left: -100%;
+		display: block;
+		padding: 100px 50px;
+		text-align: center;
+		width: 100%;
+		height: 100vh;
+		background: #fff;
+		transition: 0.5s;
+		z-index: 999;
+		border-top: 1px solid rgba(0,0,0,0.2);
+	}
+
+	.menu.active {
+		left: 0;
+	}
+
+	header ul li a {
+		color: #000;
+		font-size: 24px;
+		margin: 10px;
+	}
+
+	.work .content .card {
+		margin-bottom: 100px;
+	}
+
+	.work-ute .grid {
+		grid-template-columns: 1fr;
+		grid-template-rows: 500px 1fr;
+	}
+
+	.toggle {
+		width: 40px;
+		height: 40px;
+		background: url("../img/menu.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 30px;
+		cursor: pointer;
+	}
+
+	.toggle.active {
+		background: url("../img/close.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 25px;
+		cursor: pointer;
+	}
+
+	header.sticky .toggle {
+		/*filter: invert(1);*/
+	}
+
+	section {
+		padding: 100px 50px;
+	}
+
+	.banner {
+		padding: 150px 50px 100px;
+	}
+
+	.banner h2 {
+		font-size: 1.5em;
+	}
+
+	.banner h3 {
+		font-size: 1em;
+	}
+
+	.btn {
+		margin-top: 10px;
+		padding: 10px 20px:
+		font-size: 6px;
+		width: 50%;
+		height: auto;
+	}
+
+	.heading h2 {
+		font-weight: 600;
+		font-size: 24px;
+	}
+
+	.contentBx h3 {
+		font-size: 20px;
+	}
+
+	.content {
+		flex-direction: column;
+	}
+
+	.work .content {
+		flex-direction: row;
+	}
+
+	.projects .content {
+		align-items: center;
+	}
+
+	.w50 {
+		margin-bottom: 20px;
+	}
+
+	.services .content .servicesBx {
+		margin: 10px;
+	}
+
+	.work .content .workBx {
+		width: 100%;
+		padding: 10px;
+	}
+
+	.testimonial .content .testimonialBx h3 {
+		margin-top: 20px;
+	}
+
+	.contactInfo {
+		margin: 20px 0;
+}
+
+@media (max-width: 600px){
+	header, header.sticky {
+		padding: 20px 20px;
+	}
+
+	.banner {
+		padding: 150px 20px 100px;
+	}
+
+	section {
+		padding: 100px 20px;
+	}
+}
+
+@media (max-width: 800px){
+	.work .content {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.projects .content {
+		flex-direction: column;
+		align-items: center;
+	}
+}
