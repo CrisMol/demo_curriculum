@@ -168,3 +168,39 @@ footer p {
 	left:44px;
 	top:27px;
 }
+
+/*Cursor*/
+.cursor {
+	display: inline-block;
+	width: 3px;
+	background-color: #ccc;
+	margin-left: 0.1rem;
+	animation: blink 1s infinite;
+}
+
+.typed-text {
+	font-size: 1.8em;
+	letter-spacing: 1px;
+}
+
+.cursor.typing {
+	animation: none;
+}
+
+@keyframes blink {
+	0% {
+		background-color: #ccc;
+	}
+	49% {
+		background-color: #ccc;
+	}
+	50% {
+		background-color: transparent;
+	}
+	99% {
+		background-color: transparent;
+	}
+	100% {
+		background-color: #ccc;
+	}
+}
