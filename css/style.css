@@ -571,6 +571,7 @@ img {
 	font-size: 16px;
 	color: #fff;
 	flex-direction: column;
+	align-items: flex-start;
 	font-weight: 300;
 }
 
@@ -589,6 +590,12 @@ img {
 	color: #fff;
 	text-align: center;
 	padding: 10px;
+}
+
+/*Imagenes*/
+.heading img {
+	width: 150px;
+	height: 100px;
 }
 
 /*Responsive*/
