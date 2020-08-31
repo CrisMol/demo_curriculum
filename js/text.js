@@ -20,7 +20,7 @@ typing();
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["Ingeniero en Informática y Ciencias de la Computación", "Programador", "Desarrollador Web"];
+const textArray = ["Ingeniero en Informática y Ciencias de la Computación...", "Programador...", "Desarrollador Web..."];
 const typingDelay = 100;
 const erasingDelay = 100;
 const nextTextDelay = 100;
