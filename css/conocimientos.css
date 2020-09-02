@@ -14,7 +14,7 @@
 }
 
 .javascript {
-	width: 60%;
+	width: 50%;
 	animation: javascript 2s;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .bootstrap {
-	width: 75%;
+	width: 50%;
 	animation: bootstrap 2s;
 }
 
@@ -120,7 +120,7 @@
 		width: 0;
 	}
 	100% {
-		width: 60%;
+		width: 50%;
 	}
 }
 
@@ -174,7 +174,7 @@
 		width: 0;
 	}
 	100% {
-		width: 75%;
+		width: 50%;
 	}
 }
 
