@@ -79,7 +79,7 @@
 }
 
 .seo {
-	width: 60%;
+	width: 40%;
 	animation: seo 2s;
 }
 
@@ -237,7 +237,7 @@
 		width: 0;
 	}
 	100% {
-		width: 60%;
+		width: 40%;
 	}
 }
 
