@@ -69,7 +69,7 @@
 }
 
 .laravel {
-	width: 60%;
+	width: 30%;
 	animation: laravel 2s;
 }
 
@@ -219,7 +219,7 @@
 		width: 0;
 	}
 	100% {
-		width: 60%;
+		width: 30%;
 	}
 }
 
