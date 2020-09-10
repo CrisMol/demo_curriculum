@@ -14,7 +14,7 @@ var buttonprev = document.querySelector(".button.prev");
 var buttoncerrar = document.querySelector(".button.cerrar");
 var buttonnext = document.querySelector(".button.next");
 var slider_img = document.querySelector(".image-slider");
-var images = ['proyecto-tienda-online-inicio.png', 'proyecto-tienda-online-carrito.png', 'proyecto-tienda-online-pedido.png'];
+var images = ['proyecto-hilda-maria-php.png', 'modulo-cuentas-por-pagar-proyecto-hilda-maria-php.jpg'];
 var i = 0;
 
 document.querySelectorAll(".modal-container img").forEach(el=>{

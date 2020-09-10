@@ -64,13 +64,12 @@
 				<p><b>Descripción: <br></b>Proyecto realizado en la Universidad para una Asesoría Nutricional, en la que fui el reponsable de la interfaz para Facturas y Ventas, además de instalar el sistema en el Negocio. Este Sistema utilizaba un conexión a una base de datos <b>MySQL</b> localmente.<br> En mi Modulo me encargaba de realizar las consultas de todos los servicios que disponia en negocio, calculaba precios, iva, descuentos, etc.<br>Código del proyecto final: <a href="https://github.com/ASENUT/Final-de-los-Finales" target="_blank">Proyecto Asenut</a>
 				</p>
 			</div>
-					<div class="imagen-asenut">
-						<img src="images/interfaz-asenut-inicio.png" alt="imagen-de-asenut-login">
+					<div class="modal-container">
+						<img src="images/interfaz-asenut-inicio.png" alt="imagen-de-asenut-login" class="image-slider">
 						<p>Interfaz de Inicio del proyecto</p>
-					</div>
-					<div class="imagen-asenut">
-						<img src="images/registro-cliente-asenut.png" alt="interfaz-asenut-registro">
-						<p>Interfaz de Registro de Usuario, sesiones, tratamiento</p>
+						<button class="button cerrar" onclick="cerrar()"><i class="fas fa-times-circle"></i></button>
+						<button class="button prev" onclick="prev()"><i class="fas fa-arrow-circle-left"></i></button>
+						<button class="button next" onclick="next()"><i class="fas fa-arrow-circle-right"></i></button>
 					</div>
 		</div>
 		<div class="work-ute boton">
@@ -88,6 +87,6 @@
 		<p>Copyright 2020 Cristian Molina. All Right Reserved</p>
 	</div>
 	<script src="js/app.js" type="text/javascript"></script>
-	<script src="js/menu.js" type="text/javascript"></script>
+	<script src="js/asenut.js" type="text/javascript"></script>
 </body>
 </html>

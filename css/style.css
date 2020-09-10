@@ -367,7 +367,7 @@ img {
 	text-align: center;
 }
 
-.work-ute .grid .grid-content ul {
+.work-ute .grid .grid-content ul, .project-blog-online ul, .project-store-online ul {
 	margin-left: 50px;
 }
 
@@ -375,13 +375,14 @@ img {
 	margin-top: 50px;
 }
 
-/* Proyectos Java */
+/* Proyectos */
 
-.projects-java, .project-asenut, .project-excel, .project-1000-regalos, .project-hilda-maria {
+.projects-java, .project-asenut, .project-excel, .project-1000-regalos, .project-hilda-maria, 
+.projects-php, .projects-learning, .project-blog-online, .project-store-online {
 	margin-top: 50px;
 }
 
-.projects-java .content a, .projects-php .content a{
+.projects-java .content a, .projects-php .content a, .projects-learning .content a{
 	padding: 15px;
 	width: 100%;
 	text-align: left;
@@ -391,23 +392,102 @@ img {
 }
 
 .projects-java .content, .project-asenut .content , .project-excel .content,
-.project-1000-regalos .content, .project-hilda-maria .content, .projects-php .content {
+.project-1000-regalos .content, .project-hilda-maria .content, .projects-php .content, .projects-learning .content,
+.project-blog-online .content, .project-store-online .content{
 	text-align: left;
 	flex-direction: column;
 }
 
-.project-asenut .content .imagen-asenut, .project-1000-regalos .content .imagen-1000-regalos, 
-.project-hilda-maria .content .imagen-hilda-maria{
-	align-self: center;
-	max-width: 300px;
-	height: 250px;
-	text-align: center;
-	margin: 30px 0;
+.modal-container{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-.project-asenut .content .imagen-asenut img {
+.modal-container img {
+	z-index: 1;
+}
+
+.button.prev, .button.next, .button.cerrar {
+	visibility: hidden;
+}
+
+.button.cerrar.active {
+	visibility: visible;
+	position: fixed;
+	top: 85px;
+	right: 8%;
+	font-size: 2em;
+	border-radius: 3px;
+	z-index: 999;
+	background-color: transparent;
+	border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.button.prev.active {
+	visibility: visible;
+	position: fixed;
+	top: 50%;
+	left: 2%;
+	font-size: 2em;
+	border-radius: 3px;
+	z-index: 999;
+	background-color: transparent;
+	border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.button.next.active {
+	visibility: visible;
+	position: fixed;
+	top: 50%;
+	right: 4%;
+	font-size: 2em;
+	border-radius: 3px;
+	z-index: 999;
+	background-color: transparent;
+	border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.modal-container.active::after {
+	content: '';
+	position: fixed;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.56);
+	z-index: 0;
+}
+
+.modal-container.active {
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 90px;
+	left: 0;
+	overflow-y: scroll; 
+	z-index: 10;
+}
+
+.modal-container.active img {
+	width: 80%;
+	height: 80vh;
+}
+
+.content p {
+	margin-top: 8px;
 }
 
 .project-asenut .content .imagen-asenut p {
