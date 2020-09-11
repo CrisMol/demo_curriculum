@@ -170,6 +170,16 @@ footer p {
 	top:27px;
 }
 
+#menu li a #icono6{
+	width:63px;
+	height:47px;
+	display:block;
+	background:url(../images/proyecto.jpg) no-repeat;
+	position:absolute;
+	left:44px;
+	top:27px;
+}
+
 /*Cursor*/
 .cursor {
 	display: inline-block;

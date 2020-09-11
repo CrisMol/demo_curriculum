@@ -817,6 +817,15 @@ img {
 	section {
 		padding: 100px 20px;
 	}
+
+	.modal-container.active {
+		height: 500px;
+	}
+
+	.modal-container.active img {
+    	width: 80%;
+    	height: 50vh;
+	}
 }
 
 @media (max-width: 800px){
